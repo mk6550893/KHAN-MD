@@ -1,0 +1,23 @@
+Workflow Template
+
+on: [push, pull_request]
+
+jobs:
+
+build:
+
+runs-on: ubuntu-latest
+
+steps:
+
+Checkout code
+
+ actions/checkout@v2
+
+Install dependencies
+
+npm install
+
+ Build app
+
+ npm run build
